@@ -20,7 +20,7 @@ async function seed() {
   for (let i = 1; i <= 10; i++) {
     const name = "Playlist " + i;
     const description = faker.lorem.sentence();
-    await createPlaylist(name, description);
+    await createPlaylist({ name, description });
   }
 
   for (let i = 1; i <= 15; i++) {

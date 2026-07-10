@@ -20,7 +20,7 @@ afterAll(async () => {
   await db.end();
 });
 
-describe.only("/tracks router", () => {
+describe("/tracks router", () => {
   const expectedTrack = expect.objectContaining({
     name: expect.any(String),
     duration_ms: expect.any(Number),
